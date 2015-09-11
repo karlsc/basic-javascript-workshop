@@ -249,3 +249,13 @@ function biggestNumber(yourArray){
 }
 
 biggestNumber([2,5,9,4]);
+
+// This function will filter an array to find the truthy
+
+function filterMyArray(value){
+    
+    return !(value === false | value === "" | value === 0 | value === null | value === undefined | value === isNaN);
+    
+}
+
+([2,0,true,"","test",false,-1,[2,2]]).filter(filterMyArray);
