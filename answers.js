@@ -226,3 +226,26 @@ function capitalizeFirstLetter(yourString){
 }
 
 capitalizeFirstLetter("this is a SENtence");
+
+// This function will return the biggest number of an array
+
+function biggestNumber(yourArray){
+    
+    var biggest = 0;
+    var answer = 0;
+    
+    for(var i = 0 ; i < yourArray.length ; i++){
+        
+        if(biggest < yourArray[i]){
+            
+            biggest = yourArray[i];
+            
+        }
+        
+    }
+    
+    return biggest;
+    
+}
+
+biggestNumber([2,5,9,4]);
