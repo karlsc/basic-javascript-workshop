@@ -76,3 +76,14 @@ function addTwoNumbers(numberOne,numberTwo) {
     
  
 addTwoNumbers(5,6);
+
+// This function is to multiply to numbers together
+
+function multiplyTwoNumbers(numberOne,numberTwo) {
+    
+    return numberOne * numberTwo;
+
+}
+    
+ 
+multiplyTwoNumbers(5,6);
