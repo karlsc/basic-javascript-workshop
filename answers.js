@@ -65,3 +65,14 @@ if(yourString.length > 0){
     console.log("Nothing was entered!");
 
 }
+
+// This function is to add to numbers together
+
+function addTwoNumbers(numberOne,numberTwo) {
+    
+    return numberOne + numberTwo;
+
+}
+    
+ 
+addTwoNumbers(5,6);
