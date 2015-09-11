@@ -121,3 +121,22 @@ function actionOnTwoNumbers(numberOne,numberTwo,action) {
 }
 
 actionOnTwoNumbers(2,3,"add");
+
+// This function will repeat your string the number of time specified
+
+function returnStringNumberOfTime(yourString,numberOfTime){
+    
+    var answer = ""
+    
+    while(numberOfTime > 0){
+        
+        answer += yourString;
+        numberOfTime--;
+        
+    }
+    
+    return answer;
+    
+}
+
+returnStringNumberOfTime("Hello",3);
