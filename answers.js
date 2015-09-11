@@ -37,3 +37,31 @@ if(yourString.length > 0){
     console.log("Nothing was entered!");
 
 }
+
+// This function will be used to find out the letter position of your choice in a string
+
+function returnLastCharacter(aString) {
+    var stringHowLong = aString.length;
+    var position = prompt("Select a number from 1 to " + stringHowLong) - 1;
+    if(position <= aString.length - 1){
+        
+        return aString[position];
+        
+    } else {
+        
+       console.log("There is no character at this position.");
+        
+    }
+}
+
+var yourString = prompt("Enter something of your choice");
+
+if(yourString.length > 0){
+
+    returnLastCharacter(yourString);
+    
+} else {
+    
+    console.log("Nothing was entered!");
+
+}
