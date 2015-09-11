@@ -174,3 +174,28 @@ function factorial(yourNumber){
 }
     
 factorial(5);
+
+// This function returns the longest word in a string
+
+function longestWord(yourString){
+    
+    var splitSentence = yourString.split(" ");
+    var longest = 0;
+    var answer = "";
+    
+    for(var i = 0 ; i < splitSentence.length ; i++ ){
+        
+        if(longest < splitSentence[i].length){
+            
+            longest = splitSentence[i].length;
+            answer = splitSentence[i];
+            
+        }
+        
+    }
+    
+    return answer;
+    
+}
+
+longestWord("This is a sentence");
