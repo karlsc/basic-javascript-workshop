@@ -140,3 +140,13 @@ function returnStringNumberOfTime(yourString,numberOfTime){
 }
 
 returnStringNumberOfTime("Hello",3);
+
+// This function is to reverse a string
+
+function reverseAString(yourString){
+    
+    return yourString.split("").reverse().join("");
+    
+}
+
+reverseAString("Hey how are you?");
