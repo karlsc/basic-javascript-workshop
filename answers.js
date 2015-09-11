@@ -150,3 +150,27 @@ function reverseAString(yourString){
 }
 
 reverseAString("Hey how are you?");
+
+// This function is to return the factorial of a number
+
+function factorial(yourNumber){
+    
+    var answer = 1;
+    
+    if(yourNumber === 0){
+        
+        return 1;
+    } else {
+        
+        for(var i = 0 ; i < yourNumber ; yourNumber--){
+            
+            answer = answer * yourNumber;
+            
+        }
+        
+        return answer;
+        
+    }
+}
+    
+factorial(5);
