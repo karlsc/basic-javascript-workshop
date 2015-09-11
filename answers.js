@@ -199,3 +199,30 @@ function longestWord(yourString){
 }
 
 longestWord("This is a sentence");
+
+// This function will capitalize the first letter of each words in a string
+
+function capitalizeFirstLetter(yourString){
+    
+    var splitSentence = yourString.toLowerCase().split(" ");
+    var answer = "";
+    
+    for(var i = 0 ; i < splitSentence.length ; i++){
+        
+        if(i === splitSentence.length -1){
+            
+            answer += splitSentence[i].charAt(0).toUpperCase() + splitSentence[i].slice(1);
+            
+        }else {
+        
+        answer += splitSentence[i].charAt(0).toUpperCase() + splitSentence[i].slice(1) +" ";
+        
+        }
+        
+    }
+    
+    return answer;
+    
+}
+
+capitalizeFirstLetter("this is a SENtence");
