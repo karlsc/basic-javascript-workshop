@@ -87,3 +87,37 @@ function multiplyTwoNumbers(numberOne,numberTwo) {
     
  
 multiplyTwoNumbers(5,6);
+
+// This function takes two numbers and pass the action that you decide
+// add, substract, mult, div
+
+function actionOnTwoNumbers(numberOne,numberTwo,action) {
+    
+    if(action === "add") {
+        
+        return numberOne + numberTwo;
+        
+    } else if(action === "substract") {
+        
+        return numberOne - numberTwo;
+        
+    }
+    else if(action === "mult") {
+        
+        return numberOne * numberTwo;
+        
+    }
+    else if(action === "div") {
+        
+        return numberOne / numberTwo;
+        
+    }
+    else {
+        
+        console.log("DOES NOT COMPUTE!!!!");
+        
+    }
+    
+}
+
+actionOnTwoNumbers(2,3,"add");
