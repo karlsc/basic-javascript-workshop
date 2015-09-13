@@ -259,3 +259,25 @@ function filterMyArray(value){
 }
 
 ([2,0,true,"","test",false,-1,[2,2]]).filter(filterMyArray);
+
+// This function will add all the numbers in an array together
+
+function addNumbersInArray(yourArray){
+    
+    var answer = 0;
+    
+    for(var i = 0 ; i < yourArray.length ; i++){
+        
+        if(typeof yourArray[i] === "number"){
+            
+            answer += yourArray[i];
+            
+        }
+        
+    }
+    
+    return answer;
+    
+}
+
+addNumbersInArray([1,4,false,"allo",true,12,true,true,"Allo",132,-2,5]);
