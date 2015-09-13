@@ -281,3 +281,17 @@ function addNumbersInArray(yourArray){
 }
 
 addNumbersInArray([1,4,false,"allo",true,12,true,true,"Allo",132,-2,5]);
+
+// This function will return unique numbers of different arrays in one array
+
+function returnUniquesOfArrays(arrayA,arrayB){
+
+var arrayC = arrayA.filter(function(obj) { return arrayB.indexOf(obj) == -1; });
+var arrayD = arrayB.filter(function(obj) { return arrayA.indexOf(obj) == -1; });
+var arrayE = arrayC.concat(arrayD);
+
+return arrayE;
+
+}
+
+returnUniquesOfArrays([12,2,45,4],[2,3,4,32]);
