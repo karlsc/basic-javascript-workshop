@@ -295,3 +295,27 @@ return arrayE;
 }
 
 returnUniquesOfArrays([12,2,45,4],[2,3,4,32]);
+
+// This function will map a function to every values of an array
+
+function addOne(value){
+    
+    var answer = [];
+    
+    for(var i = 0 ; i < value.length ; i++){
+        
+        answer.push(value[i]+1);
+        
+    }
+    
+    return answer;
+    
+}
+
+function mapToEveryValue(yourArray,aFunction){
+
+    return aFunction(yourArray);
+    
+}
+
+mapToEveryValue([1,2,3],addOne);
